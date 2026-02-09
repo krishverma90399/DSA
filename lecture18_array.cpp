@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main(){
@@ -23,6 +24,14 @@ int main(){
     int s=sizeof(arr)/sizeof(int);
     for(int i=0;i<s;i++){
         cin>>arr[i];
+    }
+    cout<<endl;
+    //update
+    for(int i=0;i<s;i++){
+        arr[i]+=i;
+    }
+    for(int i=0;i<s;i++){
+        cout<<arr[i]<<" ";
     }
     return 0;
 }
