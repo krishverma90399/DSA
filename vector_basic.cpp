@@ -41,3 +41,4 @@ phela element push karne ke baad size=0
 3 element ke baad size=2 or size=2^2=capacity
 kyunki size=2^n
 */
+// hw 1492 leet code
