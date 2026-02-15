@@ -25,12 +25,12 @@ int main(){
         n=n/10;
     }
     //compare karna 
-    cout<<l<<"  "<<sum<<endl;
+    //cout<<l<<"  "<<sum<<endl;
     if(og==sum){
-        cout<<"Armstrong"<<endl;
+        cout<<"True"<<endl;
     }
     else{
-        cout<<"Not Armstrong"<<endl;
+        cout<<"False"<<endl;
     }
     return 0;
 }
