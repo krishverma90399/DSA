@@ -1,19 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main() {
-	int num,count,f,n; //f=frequency
-	count=0;
-    cin>>num;//this should come outside loop
-    cin>>f;//this should come outside loop
-	while(num!=0)
-	{
-		n=num%10;//this should be = instead of ==
-		if(n==f){
-			count=count+1;
-		}
-        num=num/10;//this should come outside condn
-	}
-    cout<<count<<endl;//this should come outside loop
 
-	return 0;
+int main() {
+    int n;
+    int ans,sum= 0;
+    cin>>n>>ans;
+    if (n==0 && ans==0) {
+        cout<<1<<endl;
+        return 0;
+    }
+    while(n>0){
+        if (n%10==ans){
+            sum++;
+        }
+        n/=10;
+    }
+    cout <<sum<<endl;
+    return 0;
 }
