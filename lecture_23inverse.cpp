@@ -1,4 +1,4 @@
-#include <iostream>
+#include<iostream>
 #include<vector>
 using namespace std;
 vector<int> convert(int n){
@@ -10,7 +10,7 @@ vector<int> convert(int n){
     }
     return number;
 }
-int main() {
+int main(){
     int n;
     cin>>n;
     vector<int> number=convert(n);
