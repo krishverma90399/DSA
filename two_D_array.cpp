@@ -6,6 +6,8 @@ int main(){
     {5,6,7,8},
     {9,10,11,12}
    };
+   int g=sizeof(array)/sizeof(int);
+    int h=sizeof(array)/sizeof(int);
    int a[2][3]={1,2,3,4,5,6};
    int m,n;
    cin>>m>>n;
@@ -16,5 +18,18 @@ int main(){
     }
     cout<<endl;
    }
+   for(int i=0;i<g;i++){
+     for(int j=0;j<h;j++){
+        cout<<a[i][j]<<" ";
+     }
+     cout<<endl;
+   }
+   cout<<g<<endl;
+    cout<<h<<endl;
+    for(int i=0;i<g;i++){
+        for (int j=0;j<h;j++){
+            cout<<array[i][j]<<" ";
+        }        cout<<endl;
+    }
     return 0;
 }
